@@ -7,7 +7,7 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
@@ -36,7 +36,7 @@ export default class ClassicEditor extends ClassicEditorBase { }
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
-	Base64UploadAdapter,
+	SimpleUploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
