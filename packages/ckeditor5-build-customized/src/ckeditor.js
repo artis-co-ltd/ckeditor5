@@ -85,7 +85,6 @@ ClassicEditor.defaultConfig = {
 			'horizontalLine',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
 			'undo',
 			'redo'
 		]
