@@ -94,7 +94,10 @@ ClassicEditor.defaultConfig = {
 		toolbar: [
 			'toggleImageCaption',
 			'imageTextAlternative'
-		]
+		],
+		insert: {
+			type: 'inline'
+		}
 	},
 	table: {
 		contentToolbar: [
