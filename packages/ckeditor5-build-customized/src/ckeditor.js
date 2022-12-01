@@ -34,6 +34,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -63,7 +64,8 @@ ClassicEditor.builtinPlugins = [
 	TableCaption,
 	TableToolbar,
 	TextTransformation,
-	HorizontalLine
+	HorizontalLine,
+	alignment
 ];
 
 // Editor configuration.
@@ -87,7 +89,8 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'undo',
-			'redo'
+			'redo',
+			'alignment'
 		]
 	},
 	image: {
@@ -107,6 +110,9 @@ ClassicEditor.defaultConfig = {
 			'tableRow',
 			'mergeTableCells'
 		]
+	},
+	alignment: {
+		options: ['left', 'center', 'right']
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
