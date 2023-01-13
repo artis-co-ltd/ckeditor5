@@ -12,6 +12,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -45,6 +46,7 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	FontSize,
 	FontColor,
 	FontBackgroundColor,
 	BlockQuote,
@@ -72,6 +74,7 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
+			'fontSize',
 			'fontColor',
 			'fontBackgroundColor',
 			'|',
