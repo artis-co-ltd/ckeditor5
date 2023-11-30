@@ -9,8 +9,7 @@ import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classicedi
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
-import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
-import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import { Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline } from '@ckeditor/ckeditor5-basic-styles';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
@@ -35,7 +34,13 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
-import alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+import FindAndReplace from '@ckeditor/ckeditor5-find-and-replace/src/findandreplace';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor/ckeditor5-special-characters';
+import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -45,7 +50,12 @@ ClassicEditor.builtinPlugins = [
 	SimpleUploadAdapter,
 	Autoformat,
 	Bold,
+	Code,
 	Italic,
+	Strikethrough,
+	Subscript,
+	Superscript,
+	Underline,
 	FontSize,
 	FontColor,
 	FontBackgroundColor,
@@ -67,33 +77,53 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	HorizontalLine,
-	alignment
+	Alignment,
+	CodeBlock,
+	FindAndReplace,
+	Highlight,
+	RemoveFormat,
+	SpecialCharacters,
+	SpecialCharactersEssentials,
+	PasteFromOffice,
+	Heading
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
+			'undo',
+			'redo',
+			'|',
 			'fontSize',
 			'fontColor',
 			'fontBackgroundColor',
-			'|',
 			'bold',
 			'italic',
+			'underline',
+			'code',
+			'strikethrough',
+			'subscript',
+			'superscript',
+			'removeFormat',
+			'highlight',
+			'codeBlock',
+			'blockQuote',
+			'specialCharacters',
 			'link',
+			'|',
 			'bulletedList',
 			'numberedList',
 			'|',
-			'outdent',
-			'indent',
-			'|',
 			'uploadImage',
 			'horizontalLine',
-			'blockQuote',
 			'insertTable',
-			'undo',
-			'redo',
-			'alignment'
+			'alignment',
+			'findAndReplace',
+			'heading',
+			'|',
+			'outdent',
+			'indent'
 		]
 	},
 	image: {
