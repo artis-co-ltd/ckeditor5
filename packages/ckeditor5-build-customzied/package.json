@@ -51,7 +51,17 @@
     "@ckeditor/ckeditor5-special-characters": "^36.0.1",
     "@ckeditor/ckeditor5-table": "^36.0.1",
     "@ckeditor/ckeditor5-typing": "^36.0.1",
-    "@ckeditor/ckeditor5-upload": "^36.0.1"
+    "@ckeditor/ckeditor5-upload": "^36.0.1",
+    "@ckeditor/ckeditor5-clipboard": "^36.0.1",
+    "@ckeditor/ckeditor5-core": "^36.0.1",
+    "@ckeditor/ckeditor5-engine": "^36.0.1",
+    "@ckeditor/ckeditor5-enter": "^36.0.1",
+    "@ckeditor/ckeditor5-select-all": "^36.0.1",
+    "@ckeditor/ckeditor5-ui": "^36.0.1",
+    "@ckeditor/ckeditor5-undo": "^36.0.1",
+    "@ckeditor/ckeditor5-utils": "^36.0.1",
+    "@ckeditor/ckeditor5-widget": "^36.0.1",
+    "ckeditor5": "^36.0.1"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^36.0.1",
